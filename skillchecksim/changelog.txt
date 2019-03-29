@@ -1,0 +1,39 @@
+Skill Check Simulator by Veloxization changelog
+
+0.3.0
+- Added the effects of Madness without audio or visual effects (for now)
+- Increased the minimum rotation of skill checks slightly
+- Added a new scoring system that awards 50 points for good skill checks, 100 points for great skill checks, -100 points for missed skill checks, and extra points in the following way:
+	- +10 for each token of Hex: Huntress Lullaby
+	- +50 for Decisive Strike / Overcharge
+	- +50 for hitting a Madness skill check
+- Website cookies will now save a version number to avoid possible future version overlapping
+
+0.2.3
+- Fixed issues that pressing the space bar multiple times caused
+
+0.2.2
+- Made another edit on Skill Check Simulator's cookie, setting the expiration properly
+
+0.2.1
+- Fixed an issue with sounds not playing properly when played in fast succession
+
+0.2.0
+- Made the tic spin faster and slightly repositioned it
+- Implemented the Settings menu
+- Added the effects of Hex: Huntress Lullaby
+- Added the effects of Auto Didact
+- Added the effects of Decisive Strike and Overcharge
+- For now, until a scoring system is implemented, Special Skill Checks award Good Skill Checks only
+
+0.1.2
+- Fixed the Stop button not stopping the skill checks properly if the next skill check was called
+- Attempted to fix an issue where cookies would expire before they're meant to
+- Added the ability to reset stats
+- Added changelog
+
+0.1.1
+- Added cookies for saving status
+
+0.1.0
+- First unfinished build of Skill Check Simulator

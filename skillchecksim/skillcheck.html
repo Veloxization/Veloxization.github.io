@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skill Check Simulator</title>
+	<link rel="stylesheet" href="styles/stylesheet.css">
+	<link rel="icon" type="image/png" href="graphics/icon.png">
+	<meta charset="UTF-8">
+</head>
+
+<body onkeypress="completeSkillcheck(event)" onload="checkSave()">
+	<div id="settings-wrapper">
+		<div id="settings" onclick="changedSettings()">
+			<h1>Settings</h1>
+			<p>Special Skill Checks: <select id="special">
+				<option value="default">none</option>
+				<option value="ad">Autodidact</option>
+				<option value="ds">Decisive Strike/Overcharge</option>
+			</select></p>
+			<p>Madness: <select id="madness">
+				<option value="default">none</option>
+				<option value="tier1">tier 1</option>
+				<option value="tier2">tier 2</option>
+			</select></p>
+			<p>Saboteur: <select disabled id="saboteur">
+				<option value="default">none</option>
+				<option value="tier1">tier 1</option>
+				<option value="tier2">tier 2</option>
+			</select></p>
+			<p>This Is Not Happening: <select disabled id="tinh">
+				<option value="default">none</option>
+				<option value="tier1">tier 1</option>
+				<option value="tier2">tier 2</option>
+				<option value="tier3">tier 3</option>
+			</select></p>
+			<p>Spine Chill: <select disabled id="spinechill">
+				<option value="off">Off</option>
+				<option value="on">On</option>
+			</select></p>
+			<p>Unnerving Presence: <select disabled id="unnervingpresence">
+				<option value="default">none</option>
+				<option value="tier1">tier 1</option>
+				<option value="tier2">tier 2</option>
+				<option value="tier3">tier 3</option>
+			</select></p>
+			<p>Hex: Huntress Lullaby: <select id="huntresslullaby">
+				<option value="default">none</option>
+				<option value="1">1 token</option>
+				<option value="2">2 tokens</option>
+				<option value="3">3 tokens</option>
+				<option value="4">4 tokens</option>
+				<option value="5">5 tokens</option>
+			</select></p>
+			<p>Skill Checks are <span id="scpercentage">0</span>% smaller.</p>
+			<p>Great Skill Check success zones are <span id="gpercentage">0</span>% larger.</p>
+			<div id="button-close" onclick="closeSettings()">Save and Exit</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="menu-wrapper">
+			<div id="button-settings" onclick="openSettings()">Settings</div>
+			<div id="button-start" onclick="toggleStarted()">Start</div>
+			<p>Points: <span id="points">0</span></p>
+			<p>Average: <span id="average">0</span></p>
+			<p><span id="remove-save" onclick="removeSave()">Reset stats</span></p>
+		</div>
+		<div id="gamearea-wrapper">
+			<div id="skillcheck-wrapper">
+				<img id="skillcheck" src="graphics/normal/normal100.png" />
+				<img id="tic" src="graphics/tic.png" />
+				<div id="actionbutton">Space</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Skill Check Simulator version <span id="version">0.3.0</span> © Veloxization (<a href="changelog.txt">changelog</a>)</p>
+	</div>
+	
+	<audio id="notify" src="sound/indicator.mp3" type="audio/mpeg"></audio>
+	<audio id="good" src="sound/good.mp3" type="audio/mpeg"></audio>
+	<audio id="great" src="sound/great.mp3" type="audio/mpeg"></audio>
+	
+	<script src="scripts/play.js" type="text/javascript"></script>
+</body>
+</html>
