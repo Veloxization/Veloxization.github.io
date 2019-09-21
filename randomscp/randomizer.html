@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random SCP</title>
+	</head>
+	<body>
+		<button style="margin:auto;border:3px solid #b23030;background-color:#ff4444;color:white;width:300px;height:100px;font-size:x-large;" onclick="getSCP()">Click for a random SCP</button>
+		<script type="application/javascript">
+			function getSCP() {
+				var number = Math.floor((Math.random() * 4999) + 1);
+				var textnumber = number.toString();
+				if (textnumber.length === 1) textnumber = "00" + textnumber;
+				else if (textnumber.length === 2) textnumber = "0" + textnumber;
+				window.open("http://www.scp-wiki.net/scp-" + textnumber, "_blank");
+			}
+		</script>
+	</body>
+</html>

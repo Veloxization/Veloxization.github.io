@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<title>Mikä on BB-nimesi</title>
+</head>
+<body>
+<div style="margin-left:45vw;">
+	<input type="text" style="font-size:large;" id="nimi" placeholder="Etunimi" /><br />
+	<button onclick="main()">Näytä BB-nimesi</button><br />
+	<span id="tulos" style="font-size:large;"></span>
+</div>
+<script>
+function main() {
+	var name = document.getElementById("nimi").value;
+	var output = document.getElementById("tulos");
+	output.innerHTML = "BB-nimesi on BB-" + name;
+}
+</script>
+</body>
