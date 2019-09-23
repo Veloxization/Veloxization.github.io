@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Minesweeper</title>
+</head>
+<body>
+    Grid size: <select id="playareasize">
+        <option value="8">8x8</option>
+        <option value="16">16x16</option>
+        <option value="32">32x32</option>
+    </select><br />
+    <b>Left Click:</b> Reveal<br /><b>Right Click:</b> Place Flag<br />
+    <button id="startbutton" onclick="generate()">START GAME</button> Mines: <span id="minenumber"></span><br />
+    <canvas id="playspace" width="400" height="400"></canvas>
+    <img id="flag" src="flag.png" width="20px" height="20px" style="display:none;" />
+    <img id="mine" src="mine.png" width="20px" height="20px" style="display:none;" />
+    <script src="script.js" type="text/javascript"></script>
+</body>
