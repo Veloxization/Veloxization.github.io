@@ -112,9 +112,9 @@ function generate() {
                 render.font = "20px Arial";
                 render.fillText(tile[x][y].value, x*25+10, y*25+22);
             }
+            if (tile[x][y].value != 9 && tile[x][y].status != 1) score++;
             render.closePath();
             tile[x][y].status = 1;
-            score++;
             if (score === winningScore) {
                 alert("VICTORY");
                 document.location.reload();
