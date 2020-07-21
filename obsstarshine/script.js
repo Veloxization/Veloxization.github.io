@@ -26,4 +26,4 @@ var interval = setInterval(function() {
 		else if (opacity <= 0) starBrightening[i] = true;
 		stars[i].style.opacity = opacity;
 	}
-}, 50);
+}, 25);
