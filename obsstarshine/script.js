@@ -12,7 +12,7 @@ for (var i = 0; i < starNum; i++) {
 	document.getElementById("wrapper").innerHTML += "<img src='star.png' class='star' style='opacity: " + startOpacity + ";' />";
 	document.getElementsByClassName("star")[i].style.left = x + "px";
 	document.getElementsByClassName("star")[i].style.top = y + "px";
-	document.getElementByClassName("star")[i].style.maxWidth = size + "px";
+	document.getElementsByClassName("star")[i].style.maxWidth = size + "px";
 	starBrightening[i] = true;
 }
 
