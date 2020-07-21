@@ -1,0 +1,10 @@
+#wrapper {
+	width: 1920px;
+	height: 1080px;
+	position: relative;
+}
+
+.star {
+	max-width: 10px;
+	position: absolute;
+}
