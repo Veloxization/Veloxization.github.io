@@ -8,9 +8,11 @@ for (var i = 0; i < starNum; i++) {
 	var x = Math.floor(Math.random() * width);
 	var y = Math.floor(Math.random() * height);
 	var startOpacity = Math.random();
+	var size = 10 + Math.floor(Math.random() * 11);
 	document.getElementById("wrapper").innerHTML += "<img src='star.png' class='star' style='opacity: " + startOpacity + ";' />";
 	document.getElementsByClassName("star")[i].style.left = x + "px";
 	document.getElementsByClassName("star")[i].style.top = y + "px";
+	document.getElementByClassName("star")[i].style.maxWidth = size + "px";
 	starBrightening[i] = true;
 }
 
