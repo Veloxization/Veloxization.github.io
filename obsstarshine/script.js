@@ -19,7 +19,7 @@ for (var i = 0; i < starNum; i++) {
 var stars = document.getElementsByClassName("star");
 var interval = setInterval(function() {
 	for (var i = 0; i < stars.length; i++) {
-		var increment = 0.01;
+		var increment = 0.01 + Math.random() * 0.05;
 		if (!starBrightening[i]) increment *= -1;
 		var opacity = parseFloat(stars[i].style.opacity) + increment;
 		if (opacity >= 1) starBrightening[i] = false;
