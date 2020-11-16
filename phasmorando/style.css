@@ -1,0 +1,54 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Tekton Pro';
+    src: url('fonts/TektonPro-Bold.eot');
+    src: url('fonts/TektonPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TektonPro-Bold.woff') format('woff'),
+        url('fonts/TektonPro-Bold.ttf') format('truetype'),
+        url('fonts/TektonPro-Bold.svg#TektonPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: black;
+    background-image: url("images/rebel.png");
+    background-repeat: repeat;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    padding:20px;
+    margin: auto;
+    width: 70%;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+#content {
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    color: black;
+    margin: auto;
+    width: 560px;
+    height: 545px;
+    padding-top: 75px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+}
+
+.item, #whiteboard {
+    font-family: "Tekton Pro";
+}
+
+.non-essential {
+    display: none;
+}

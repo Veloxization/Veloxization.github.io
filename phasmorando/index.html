@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phasmophobia Item Randomiser</title>
+        <meta name="keywords" content="phasmophobia, phasmophobia game, game, gameplay, challenge, gameplay challenge, phasmophobia challenge, phasmophobia game challenge, phasmophobia random, phasmophobia random challenge, random, randomizer, randomiser, random items, phasmophobia random items, difficulty, difficult" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="header"><center><h1>Phasmophobia Item Randomiser</h1></center></div>
+            <div id="content">
+                <span class="item" id="emf">EMF Reader x [<span id="emf-amount">1</span>/2]<br/></span>
+                <span class="item" id="flashlight">Flashlight x [<span id="flashlight-amount">1</span>/4]<br/></span>
+                <span class="item" id="photo">Photo Camera x [<span id="photo-amount">1</span>/3]<br/></span>
+                <span class="item non-essential" id="lighter">Lighter x [<span id="lighter-amount">0</span>/2]<br/></span>
+                <span class="item non-essential" id="candle">Candle x [<span id="candle-amount">0</span>/4]<br/></span>
+                <span class="item" id="uv">UV Light x [<span id="uv-amount">1</span>/2]<br/></span>
+                <span class="item non-essential" id="crucifix">Crucifix x [<span id="crucifix-amount">0</span>/2]<br/></span>
+                <span class="item" id="video">Video Camera x [<span id="video-amount">1</span>/6]<br/></span>
+                <span class="item" id="evp">Spirit Box x [<span id="evp-amount">1</span>/2]<br/></span>
+                <span class="item non-essential" id="salt">Salt x [<span id="salt-amount">0</span>/2]<br/></span>
+                <span class="item non-essential" id="smudge">Smudge Sticks x [<span id="smudge-amount">0</span>/4]<br/></span>
+                <span class="item non-essential" id="tripod">Tripod x [<span id="tripod-amount">0</span>/5]<br/></span>
+                <span class="item non-essential" id="strongflash">Strong Flashlight x [<span id="strongflash-amount">0</span>/4]<br/></span>
+                <span class="item non-essential" id="motion">Motion Sensor x [<span id="motion-amount">0</span>/4]<br/></span>
+                <span class="item non-essential" id="sound">Sound Sensor x [<span id="sound-amount">0</span>/4]<br/></span>
+                <span class="item non-essential" id="thermo">Thermometer x [<span id="thermo-amount">0</span>/3]<br/></span>
+                <span class="item non-essential" id="pills">Sanity Pills x [<span id="pills-amount">0</span>/4]<br/></span>
+                <span class="item" id="book">Ghost Writing Book x [<span id="book-amount">1</span>/2]<br/></span>
+                <span class="item non-essential" id="infrared">Infrared Light Sensor x [<span id="infrared-amount">0</span>/4]<br/></span>
+                <span class="item non-essential" id="mic">Parabolic Microphone x [<span id="mic-amount">0</span>/2]<br/></span>
+                <span class="item non-essential" id="glowstick">Glowstick x [<span id="glowstick-amount">0</span>/2]<br/></span>
+                <span class="item non-essential" id="headcam">Head Mounted Camera x [<span id="headcam-amount">0</span>/4]<br/></span>
+                <div id="footer">
+                    <span id="whiteboard">Can leave? - <span id="can-leave">Yes</span></span><br/>
+                    <input type="checkbox" id="hide-zeros" name="hide-zeros" checked onclick="toggleZeros()">
+                    <label for="hide-zeros">Hide Zeros</label>
+                    <button onclick="randomise()">Randomise</button>
+                </div>
+            </div>
+            <script type="text/javascript" src="randomise.js"></script>
+        </div>
+    </body>
+</html>
