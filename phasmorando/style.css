@@ -47,6 +47,7 @@ body {
 
 .item, #whiteboard {
     font-family: "Tekton Pro";
+	display: block;
 }
 
 .non-essential {
